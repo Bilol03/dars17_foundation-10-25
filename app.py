@@ -63,31 +63,41 @@
 # finally:
 #     print("Hamma vazifa tugadi")
 
-import random as r
-imkon = 0
-randomSon = r.randint(1, 100)
+# import random as r
+# imkon = 0
+# randomSon = r.randint(1, 100)
 
-while True:
+# while True:
+#     try:
+
+#         son = int(input("Son kiriting:"))
+
+#         if(son > randomSon ):
+#             imkon += 1
+#             print("Katta son tanladi")
+#         elif son < randomSon:
+#             imkon += 1
+#             print("Kichik son tanladiz")
+#         else: 
+#             print("Son topildi")
+#             break
+
+#         if(imkon > 5):
+#             raise Exception("Imkoniyat tugadi")
+#     except Exception as e:
+#         print(e.args)
+#         break
+#     finally:
+#         print("Oyin tugadi")
+    
+
+def maxNumber(sonlar):
     try:
-
-        son = int(input("Son kiriting:"))
-
-        if(son > randomSon ):
-            imkon += 1
-            print("Katta son tanladi")
-        elif son < randomSon:
-            imkon += 1
-            print("Kichik son tanladiz")
-        else: 
-            print("Son topildi")
-            break
-
-        if(imkon > 5):
-            raise Exception("Imkoniyat tugadi")
+        kattaRaqam = 0
+        for son in sonlar:
+            if son > kattaRaqam:
+                kattaRaqam = son
+        print(kattaRaqam)
     except Exception as e:
         print(e.args)
-        break
-    finally:
-        print("Oyin tugadi")
-    
-    
+maxNumber([2,4,5,"n", 8,99, 19,1])
