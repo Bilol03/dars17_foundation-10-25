@@ -91,13 +91,23 @@
 #         print("Oyin tugadi")
     
 
-def maxNumber(sonlar):
+# def maxNumber(sonlar):
+#     try:
+#         kattaRaqam = 0
+#         for son in sonlar:
+#             if son > kattaRaqam:
+#                 kattaRaqam = son
+#         print(kattaRaqam)
+#     except Exception as e:
+#         print(e.args)
+# maxNumber([2,4,5, 8,99, 19,1])
+def minNumber(sonlar):
     try:
-        kattaRaqam = 0
+        kichikRaqam = sonlar[0]
         for son in sonlar:
-            if son > kattaRaqam:
-                kattaRaqam = son
-        print(kattaRaqam)
-    except Exception as e:
-        print(e.args)
-maxNumber([2,4,5,"n", 8,99, 19,1])
+            if son < kichikRaqam:
+                kichikRaqam = son
+        print(kichikRaqam)
+    except Exception as error:
+        print(error.args)
+minNumber([2,4,5,"n", 8,99, 19,1])
