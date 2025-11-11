@@ -51,7 +51,7 @@
 # fizzBuzz(15)
 # fizzBuzz(12)
 # fizzBuzz(10)
-# fizzBuzz(11)
+
 
 print("Abrorbek")
 
