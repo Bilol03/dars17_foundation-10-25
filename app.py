@@ -107,7 +107,9 @@ def minNumber(sonlar):
         for son in sonlar:
             if son < kichikRaqam:
                 kichikRaqam = son
-        print(kichikRaqam)
     except Exception as error:
         print(error.args)
+    finally:
+        print(kichikRaqam)
 minNumber([2,4,5,"n", 8,99, 19,1])
+
