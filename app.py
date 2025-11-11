@@ -36,3 +36,20 @@
 # else:
 #     raise TypeError("Toq son kiritding")
 
+def fizzBuzz(son):
+    try:
+        if son % 3 == 0 and son % 5 == 0:
+            print("Fizz buz")
+        elif son % 3 == 0:
+            print("Fizz")
+        elif son % 5 == 0:
+            print("Buzz")
+        else:
+            raise TypeError("FizzBuzzdan hech biri emas")
+    except TypeError as t:
+        print(t.args)
+fizzBuzz(15)
+fizzBuzz(12)
+fizzBuzz(10)
+fizzBuzz(11)
+
