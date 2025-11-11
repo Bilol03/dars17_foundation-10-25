@@ -53,7 +53,7 @@
 # fizzBuzz(10)
 # fizzBuzz(11)
 
-
+print("Abrorbek")
 
 # try: 
 #     print("salom")
