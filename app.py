@@ -68,19 +68,26 @@ imkon = 0
 randomSon = r.randint(1, 100)
 
 while True:
-    son = int(input("Son kiriting"))
+    try:
 
-    if(son > randomSon ):
-        imkon += 1
-        print("Katta son tanladi")
-    elif son < randomSon:
-        imkon += 1
-        print("Kichik son tanladiz")
-    else: 
-        print("Son topildi")
+        son = int(input("Son kiriting:"))
+
+        if(son > randomSon ):
+            imkon += 1
+            print("Katta son tanladi")
+        elif son < randomSon:
+            imkon += 1
+            print("Kichik son tanladiz")
+        else: 
+            print("Son topildi")
+            break
+
+        if(imkon > 5):
+            raise Exception("Imkoniyat tugadi")
+    except Exception as e:
+        print(e.args)
         break
-
-    if(imkon > 5):
-        raise Exception("Imkoniyat tugadi")
+    finally:
+        print("Oyin tugadi")
     
     
